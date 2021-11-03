@@ -7,16 +7,15 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/js/contractors.js":
 /*!*******************************!*\
   !*** ./src/js/contractors.js ***!
   \*******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"contractorsList\": () => (/* binding */ contractorsList)\n/* harmony export */ });\nvar contractorsList = document.querySelector(\"tbody\");\nvar contractors = [{\n  id: \"1\",\n  name: \"John Doe\",\n  email: \"john.doe@tuzimbe.com\",\n  age: \"45\",\n  sex: \"Female\",\n  role: \"Manager\"\n}, {\n  id: \"2\",\n  name: \"Blue Sky\",\n  email: \"blue.sky@tuzimbe.com\",\n  age: \"18\",\n  sex: \"Male\",\n  role: \"Porter\"\n}, {\n  id: \"3\",\n  name: \"Green Beans\",\n  email: \"green.beans@tuzimbe.com\",\n  age: \"28\",\n  sex: \"Female\",\n  role: \"Carpenter\"\n}, {\n  id: \"4\",\n  name: \"Apple Tree\",\n  email: \"apple.tree@tuzibe.com\",\n  age: \"30\",\n  sex: \"Male\",\n  role: \"Builder\"\n}, {\n  id: \"5\",\n  name: \"Qwerty Asdfg\",\n  email: \"qwerty@tuzimbe.com\",\n  age: \"25\",\n  sex: \"Female\",\n  role: \"Carpenter\"\n}, {\n  id: \"6\",\n  name: \"May Flower\",\n  email: \"may.flower@tuzimbe.com\",\n  age: \"34\",\n  sex: \"Male\",\n  role: \"Porter\"\n}];\ncontractors.forEach(function (contractor) {\n  contractorsList.innerHTML += \"<tr>\\n      <td>\".concat(contractor.id, \"</td>\\n      <td>\").concat(contractor.name, \"</td>\\n      <td>\").concat(contractor.email, \"</td>\\n      <td>\").concat(contractor.age, \"</td>\\n      <td>\").concat(contractor.sex, \"</td>\\n      <td>\").concat(contractor.role, \"</td>\\n      <td>\\n        <button class=\\\"btn btn-outline-success\\\">View Details</button>\\n      </td>\\n    </tr>\\n  \");\n});\n\n//# sourceURL=webpack://tuzimbe-templates/./src/js/contractors.js?");
+eval("var contractorsList = document.querySelector(\"tbody\");\nvar contractors = [{\n  id: \"1\",\n  name: \"Johhhn Doe\",\n  email: \"john.doe@tuzimbe.com\",\n  age: \"45\",\n  sex: \"Female\",\n  role: \"Manager\"\n}, {\n  id: \"2\",\n  name: \"Blue Sky\",\n  email: \"blue.sky@tuzimbe.com\",\n  age: \"18\",\n  sex: \"Male\",\n  role: \"Porter\"\n}, {\n  id: \"3\",\n  name: \"Green Beans\",\n  email: \"green.beans@tuzimbe.com\",\n  age: \"28\",\n  sex: \"Female\",\n  role: \"Carpenter\"\n}, {\n  id: \"4\",\n  name: \"Apple Tree\",\n  email: \"apple.tree@tuzibe.com\",\n  age: \"30\",\n  sex: \"Male\",\n  role: \"Builder\"\n}, {\n  id: \"5\",\n  name: \"Qwerty Asdfg\",\n  email: \"qwerty@tuzimbe.com\",\n  age: \"25\",\n  sex: \"Female\",\n  role: \"Carpenter\"\n}, {\n  id: \"6\",\n  name: \"May Flower\",\n  email: \"may.flower@tuzimbe.com\",\n  age: \"34\",\n  sex: \"Male\",\n  role: \"Porter\"\n}];\ncontractors.forEach(function (contractor) {\n  contractorsList.innerHTML += \"<tr>\\n      <td>\".concat(contractor.id, \"</td>\\n      <td>\").concat(contractor.name, \"</td>\\n      <td>\").concat(contractor.email, \"</td>\\n      <td>\").concat(contractor.age, \"</td>\\n      <td>\").concat(contractor.sex, \"</td>\\n      <td>\").concat(contractor.role, \"</td>\\n      <td>\\n        <button class=\\\"btn btn-outline-success item\\\">View Details</button>\\n      </td>\\n    </tr>\\n  \");\n});\nvar buttons = document.querySelectorAll(\".item\");\nbuttons.forEach(function (item, index) {\n  item.addEventListener(\"click\", function (e) {\n    // console.log(contractors[index]);\n    console.log(e.target);\n    location.href = \"contractorProfile.html\";\n  });\n});\n\n//# sourceURL=webpack://tuzimbe-templates/./src/js/contractors.js?");
 
 /***/ }),
 
@@ -26,7 +25,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _contractors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contractors */ \"./src/js/contractors.js\");\n\n\n//# sourceURL=webpack://tuzimbe-templates/./src/js/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _contractors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./contractors */ \"./src/js/contractors.js\");\n/* harmony import */ var _contractors__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_contractors__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack://tuzimbe-templates/./src/js/main.js?");
 
 /***/ })
 
@@ -57,6 +57,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _con
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
