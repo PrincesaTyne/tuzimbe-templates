@@ -12,12 +12,12 @@
     $(function(){
       $('#nav').load('components/common/nav.html');
       $('#sidebar').load('components/common/sidebar.html');
-      $('#addMaterial').load('components/materials/add-material.html');
+      $('#addMaterialReport').load('components/materials/add-material-report.html');
       return false
     });
   </script>
 
-  <title>Materials | Tuzimbe</title>
+  <title>Materials | Report | Tuzimbe</title>
 </head>
 <body>
   <div id="nav"></div>
@@ -28,10 +28,10 @@
     
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
-        <h5>Materials</h5>
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addMaterial">Add Material</button>
+        <h5>Materials Report</h5>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addMaterialReport">Add Material Report</button>
       </div>
-      <div id="addMaterial" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addMaterial" aria-hidden="true">
+      <div id="addMaterialReport" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addMaterial" aria-hidden="true">
       </div>
 
       <div class="table-responsive">
@@ -45,13 +45,13 @@
               <th scope="col"></th>
             </tr>
           </thead>
-          <tbody class="materials-tbody">
+          <tbody class="materials-report-tbody">
           </tbody>
         </table>
       </div>
     </main>
   </div>
 
-  <script src="../js/materials.js"></script>
+  <script src="../js/materialsReport.js"></script>
 </body>
 </html>

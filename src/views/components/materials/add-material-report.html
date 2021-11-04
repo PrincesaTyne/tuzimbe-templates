@@ -3,7 +3,7 @@
     <form action="#">
       <div class="row align-items-center">
         <div class="col-10">
-          <h4 class="text-center">Add Material Form</h4>
+          <h4 class="text-center">Material Checkout Form</h4>
         </div>
         <div class="col-2">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -14,7 +14,15 @@
           <label for="name" class="form-label">Name</label>
         </div>
         <div class="col-9">
-          <input type="text" class="form-control" id="name">
+          <select id="name" class="form-select" aria-label="Material Name">
+            <option selected>Please select material</option>
+            <option value="Sand">Sand</option>
+            <option value="Water">Water</option>
+            <option value="Bricks">Bricks</option>
+            <option value="Nails">Nails</option>
+            <option value="Cement">Cement</option>
+            <option value="Stones">Stones</option>
+          </select>
         </div>
       </div>
       <div class="row align-items-center m-4">
@@ -25,27 +33,6 @@
           <input type="number" step="1" class="form-control" id="quantity">
         </div>
       </div>
-      <div class="row align-items-center m-4">
-        <div class="col-3">
-          <label for="measurement" class="form-label">Measurement</label>
-        </div>
-        <div class="col-9">
-          <select id="measurement" class="form-select" aria-label="Measurement">
-            <option selected>Select Measurement</option>
-            <option value="Bags">Bags</option>
-            <option value="Litres">Litres</option>
-            <option value="Kgs">Kgs</option>
-            <option value="Tonnes">Tonnes</option>
-          </select>
-        </div>
-      </div>
-      <div class="row align-items-center m-4">
-        <div class="col-3">
-          <label for="price" class="form-label">Price</label>
-        </div>
-        <div class="col-9">
-          <input type="number" step="1" class="form-control" id="price">
-        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-success" data-bs-dismiss="modal">Submit</button>
