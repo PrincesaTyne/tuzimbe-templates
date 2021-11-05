@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <module href="/components/common/head.html"></module>
+  <title>Contractors | Tuzimbe</title>
+</head>
+<body>
+  <module href="/components/common/nav.html"></module>
+
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+
+    <module href="/components/common/sidebar.html"></module>
+    
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3">
+        <h5>Contractors</h5>
+        <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#addContractor">Add Contractor</button>
+      </div>
+      <module href="/components/contractors/add-contractor.html"></module>
+
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Contractor ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Age</th>
+              <th scope="col">Sex</th>
+              <th scope="col">Role</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
