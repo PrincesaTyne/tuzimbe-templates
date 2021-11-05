@@ -1,4 +1,4 @@
-const contractorsList = document.querySelector("tbody");
+const contractorsList = document.querySelector(".contractors-tbody");
 
 
 
@@ -29,7 +29,7 @@ contractors.forEach(contractor => {
 
 const buttons = document.querySelectorAll(".item");
 
-buttons.forEach((item,index) => {
+buttons.forEach((item) => {
   item.addEventListener("click", function(e) {
     // console.log(contractors[index]);
     console.log(e.target);
