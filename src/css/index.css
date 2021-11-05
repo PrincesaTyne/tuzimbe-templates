@@ -1,0 +1,9 @@
+.top .card {
+  min-width: 200px;
+  min-height: 250px;
+}
+
+.bottom .card{
+  min-width: 200px;
+  min-height: 320px;
+}
